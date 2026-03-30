@@ -1,0 +1,46 @@
+# ============================================================
+# Root .gitignore — Frontend & Contract Repo
+# ============================================================
+
+# 1. TEMPORARY: Ignore the backend folder for this repo
+backend/
+
+# 2. Dependencies
+node_modules/
+**/node_modules/
+
+# 3. Environment variables (CRITICAL)
+.env
+**/.env
+.env.local
+.env.*.local
+
+# 4. Build output
+dist/
+build/
+frontend/dist/
+
+# 5. Local Database (Prevent leaks before MongoDB switch)
+*.db
+*.sqlite
+*.sqlite3
+
+# 6. Hardhat / Smart Contracts
+contract/artifacts/
+contract/cache/
+contract/typechain-types/
+contract/deployments/
+
+# 7. Vite / Frontend
+frontend/.vite/
+
+# 8. OS & Logs
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# 9. Editor
+.vscode/
+.idea/
+*.swp
