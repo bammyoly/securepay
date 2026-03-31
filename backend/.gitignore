@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# SQLite Database files
+payroll.db
+payroll.db-shm
+payroll.db-wal
+*.db
+*.sqlite
+
+# Environment Variables
+.env
+
+# Logs and System files
+npm-debug.log*
+.DS_Store
